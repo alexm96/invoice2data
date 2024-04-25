@@ -41,7 +41,6 @@ def to_text(path: str, area_details: dict = None):
         raise EnvironmentError("tesseract not installed.")
     if not shutil.which(convert_command_prefix):
         raise EnvironmentError("imagemagick not installed.")
-    test=""
     language = get_languages()
     logger.debug("tesseract language arg is, %s", language)
     timeout = 180
